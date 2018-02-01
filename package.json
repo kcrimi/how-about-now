@@ -1,0 +1,20 @@
+{
+	"name": "how-about-now",
+	"version": "1.0.0",
+	"description": "Notify me when websites change",
+	"main": "index.js",
+	"scripts": {
+		"test": "hello",
+    	"start": "node app.js"
+	},
+	"author": "Kevin Crimi",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.17.2",
+		"dotenv": "^4.0.0",
+		"express": "^4.15.3",
+		"request": "^2.81.0",
+		"request-promise": "^4.2.1",
+		"sendgrid": "^5.2.0"
+	}
+}
