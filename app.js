@@ -36,6 +36,8 @@ setInterval(() => {
 	})
 }, 21600000) // every 6 hours
 
-setInterval(() => {
-    rp({uri:"https://how-about-now.herokuapp.com/awake"})
-}, 600000) // every 10 minutes (600000)
+if (process.env.WAKE) {
+	setInterval(() => {
+	    rp({uri:"https://how-about-now.herokuapp.com/awake"})
+	}, 600000) // every 10 minutes (600000)
+}
